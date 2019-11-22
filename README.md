@@ -7,6 +7,6 @@ We publish these guidelines here with the aim of fostering dialogue and learning
 We further hope that these guidelines may encourage other organizations to create guidelines that are appropriate for them and in turn, if they are able, to publish theirs.
 
 ## This repository
-This repository used Microsoft's REST API Guidelines as a base. To contribute to their repository, please see the [contribution guidelines][contribution-guidance].
+This repository was built using Microsoft's REST API Guidelines as a base. To contribute to their repository, please see [Microsoft's API Guidelines][Microsoft's API Guidelines]
 
-[contribution-guidance]: CONTRIBUTING.md
+[Microsoft's API Guidelines]: https://github.com/microsoft/api-guidelines
