@@ -2,12 +2,14 @@
 
 ## BCD Travel REST API Guidelines Working Group
 
-Name | Name | Name |
------------------------------------------- | ---------------------------------------- | ----------------------------------------
-Chet Marshall (Sr. Product Manager, API)   | Aitor Mendez (Sr. Director, Ent Dev)     | Yuriy Razdolskiy (Sr. Director, Engineering)
-Kiril Staikov (Sr. Engineer, Engineering)  | Sudhagar Shanmugam (Architect, Ent Dev)  | Brian Sayegh (Developer Analyst, Ent Dev) 
-Kuldip Patel (Systems Analyst, Ent Dev)    | Dzmitry Tabolich (EPAM)                  | Yauheni Sankevich (EPAM)
-Daniel Toth (EPAM)                         | Vera Sotnikava (EPAM)                    | 
+Name | Name |
+------------------------------------------- | ---------------------------------------- 
+Chet Marshall (Sr. Product Manager, API)    | Aitor Mendez (Sr. Director, Ent Dev)     
+Yuriy Razdolskiy (Sr. Director, Engineering)| Kiril Staikov (Sr. Engineer, Engineering)
+Sudhagar Shanmugam (Architect, Ent Dev)     | Brian Sayegh (Developer Analyst, Ent Dev) 
+Kuldip Patel (Systems Analyst, Ent Dev)     | Dzmitry Tabolich (EPAM) 
+Yauheni Sankevich (EPAM)                    | Daniel Toth (EPAM)
+Vera Sotnikava (EPAM)                       | 
 
 <div style="font-size:150%">
 Document editors: Leah Tucker {Your APIs},
