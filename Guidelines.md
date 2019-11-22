@@ -1,18 +1,30 @@
-# Microsoft REST API Guidelines
+# BCD Travel REST API Guidelines
 
-## Microsoft REST API Guidelines Working Group
+## BCD Travel REST API Guidelines Working Group
 
 Name | Name | Name |
----------------------------- | -------------------------------------- | ----------------------------------------
-Dave Campbell (CTO C+E)      | Rick Rashid (CTO ASG)                  | John Shewchuk (Technical Fellow, TED HQ)
-Mark Russinovich (CTO Azure) | Steve Lucco (Technical Fellow, DevDiv) | Murali Krishnaprasad (Azure App Plat)
-Rob Howard (ASG)             | Peter Torr  (OSG)                      | Chris Mullins (ASG)
+------------------------------------------ | ---------------------------------------- | ----------------------------------------
+Chet Marshall (Sr. Product Manager, API)   | Aitor Mendez (Sr. Director, Ent Dev)     | Yuriy Razdolskiy (Sr. Director, Engineering)
+Kiril Staikov (Sr. Engineer, Engineering)  | Sudhagar Shanmugam (Architect, Ent Dev)  | Brian Sayegh (Developer Analyst, Ent Dev) 
+Kuldip Patel (Systems Analyst, Ent Dev)    | Dzmitry Tabolich (EPAM)                  | Yauheni Sankevich (EPAM)
+Daniel Toth (EPAM)                         | Vera Sotnikava (EPAM)                    | 
 
 <div style="font-size:150%">
-Document editors: John Gossman (C+E), Chris Mullins (ASG), Gareth Jones (ASG), Rob Dolin (C+E), Mark Stafford (C+E)<br/>
+Document editors: Leah Tucker {Your APIs},
 </div>
 
 # Microsoft REST API Guidelines
+
+# General guidelines for RESTful URLs
+- A URL identifies a resource.
+- URLs should include nouns, not verbs.
+- Use plural nouns only for consistency (no singular nouns).
+- Use HTTP verbs (GET, POST, PUT, DELETE) to operate on the collections and elements.
+- You shouldn’t need to go deeper than resource/identifier/resource.
+- Put the version number at the base of your URL, for example http://example.com/v1/path/to/resource.
+- URL v. header:
+  - If it changes the logic you write to handle the response, put it in the URL.
+  - If it doesn’t change the logic for each response, like OAuth info, put it in the header.
 
 ## 1. Abstract
 The Microsoft REST API Guidelines, as a design principle, encourages application developers to have resources accessible to them via a RESTful HTTP interface.
