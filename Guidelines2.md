@@ -15,7 +15,7 @@ Vera Sotnikava (EPAM)                        |
 Document editors: Leah Tucker {Your APIs}
 </div>
 
-# BCD Travel REST API Guidelines
+
 
 ## General guidelines for RESTful URLs
 - A URL identifies a resource.
@@ -27,6 +27,8 @@ Document editors: Leah Tucker {Your APIs}
 - URL v. header:
   - If it changes the logic you write to handle the response, put it in the URL.
   - If it doesn’t change the logic for each response, like OAuth info, put it in the header.
+
+
 
 ## 1. Abstract
 The BCD Travel REST API Guidelines, as a design principle, encourages application developers to have resources accessible to them via a RESTful HTTP interface.
