@@ -22,7 +22,6 @@ Document editors: Leah Tucker {Your APIs}
 - URLs should include nouns, not verbs.
 - Use plural nouns only for consistency (no singular nouns).
 - Use HTTP verbs (GET, POST, PUT, DELETE) to operate on the collections and elements.
-- You shouldn’t need to go deeper than resource/identifier/resource.
 - Put the version number at the base of your URL, for example http://example.com/v1/path/to/resource.
 - URL v. header:
   - If it changes the logic you write to handle the response, put it in the URL.
