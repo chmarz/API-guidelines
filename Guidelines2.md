@@ -182,7 +182,7 @@ This document establishes the guidelines BCD Travel REST APIs SHOULD follow so R
 <!-- /TOC -->
 
 ## 3. Introduction
-Developers access most BCD Travel Cloud Platform resources via HTTP interfaces.
+Developers access most BCD Travel resources via HTTP interfaces.
 Although each service typically provides language-specific frameworks to wrap their APIs, all of their operations eventually boil down to HTTP requests.
 BCD Travel must support a wide range of clients and services and cannot rely on rich frameworks being available for every development environment.
 Thus, a goal of these guidelines is to ensure BCD Travel REST APIs can be easily and consistently consumed by any client with basic HTTP support.
