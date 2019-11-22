@@ -39,7 +39,6 @@ This document establishes the guidelines BCD Travel REST APIs SHOULD follow so R
 ## 2. Table of contents
 <!-- TOC depthFrom:2 depthTo:4 orderedList:false updateOnSave:false withLinks:true -->
 
-- [BCD Travel REST API Guidelines Working Group](#BCD Travel-rest-api-guidelines-working-group)
 - [1. Abstract](#1-abstract)
 - [2. Table of contents](#2-table-of-contents)
 - [3. Introduction](#3-introduction)
