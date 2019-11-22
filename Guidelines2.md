@@ -3,7 +3,7 @@
 ## BCD Travel REST API Guidelines Working Group
 
 Name | Name |
-------------------------------------------- | ---------------------------------------- 
+----------------------------------------------------------------- | -------------------------------------------------------- 
 Chet Marshall (Sr. Product Manager, API)    | Aitor Mendez (Sr. Director, Ent Dev)     
 Yuriy Razdolskiy (Sr. Director, Engineering)| Kiril Staikov (Sr. Engineer, Engineering)
 Sudhagar Shanmugam (Architect, Ent Dev)     | Brian Sayegh (Developer Analyst, Ent Dev) 
@@ -12,12 +12,12 @@ Yauheni Sankevich (EPAM)                    | Daniel Toth (EPAM)
 Vera Sotnikava (EPAM)                       | 
 
 <div style="font-size:150%">
-Document editors: Leah Tucker {Your APIs},
+Document editors: Leah Tucker {Your APIs}
 </div>
 
 # BCD Travel REST API Guidelines
 
-# General guidelines for RESTful URLs
+## General guidelines for RESTful URLs
 - A URL identifies a resource.
 - URLs should include nouns, not verbs.
 - Use plural nouns only for consistency (no singular nouns).
