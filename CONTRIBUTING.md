@@ -1,9 +1,8 @@
-# Contributing to the Microsoft REST API Guidelines
-The Microsoft REST API Guidelines is a Microsoft-wide initiative to develop consistent design guidelines for REST APIs. The initiative requires input and feedback from a variety of individuals both inside and outside of Microsoft.
+# Contributing to the BCD REST API Guidelines
+The BCD REST API Guidelines is a company-wide initiative to develop consistent design guidelines for REST APIs. The initiative requires input and feedback from a variety of individuals both inside and outside of BCD.
 
 To provide feedback, please follow the guidance in this document. Please note that these are just guidelines, not rules. Use your best judgment and feel free to propose changes to anything in this repository, including the contribution guidelines.
 
-Please note that this project is released with a [Contributor Code of Conduct][code-of-conduct]. By participating in this project you agree to abide by its terms.
 - [Creating issues](#creating-issues)
 - [Recommended setup for contributing](#recommended-setup-for-contributing)
 - [Documentation styleguide](#documentation-styleguide)
@@ -13,12 +12,12 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 ## Creating issues
 - You can [create an issue][new-issue], but before doing that please read the bullets below and include as many details as possible.
 - Perform a [cursory search][issue-search] to see if a similar issue has already been submitted.
-- Reference the version of the Microsoft REST API Guidelines you are using.
+- Reference the version of the BCD REST API Guidelines you are using.
 - Include the guidance you expected and other places you've seen that guidance, e.g. [White House Web API Standards][white-house-api-guidelines].
 - Include sample requests and responses whenever possible.
 
 ### Related repositories
-This is the repository for Microsoft REST API Guidelines documentation only. Please ensure that you are opening issues in the right repository.
+This is the repository for BCD REST API Guidelines documentation only. Please ensure that you are opening issues in the right repository.
 
 ## Recommended setup for contributing
 - Fork this repository on GitHub
@@ -33,13 +32,13 @@ This is the repository for Microsoft REST API Guidelines documentation only. Ple
 - Retain only essential headers for understanding the example
 - Use valid (e.g., member names quoted), pretty-printed JSON with a 2 space indent
 - Minimize JSON payloads by using ellipses
-- Write one sentence per line.
+- Write one sentence per line
 
 ### Example
 #### Request
 
 ```http
-GET http://services.odata.org/V4/TripPinServiceRW/People HTTP/1.1
+GET https://api-hotels.tripsource.com/hotels/get_list/?destination=Region%3A48.224147%2C16.350547&search_radius=5&search_radius_unit=km&limit=5&order=-star_rating&page=1&chains=HS%2CRT&star_rating_filter=3%2C4%2C5&hotel_name_keyword=mozart&checkin=2018-10-28&is_multi_traveler_mode=false&suggest_alternative=&entity_id=42904&system=obt&api_key=testkey&customer_ip=192.168.31.116&locale=en_US&nonce=1543353502645&session_id=71IxqHT8mgMe5ohsZ25e5P&timestamp=1388774110&user_agent=Mozilla%2F5.0%20(Linux%3B%20Android%207.0%3B%20SM-G930V%20Build%2FNRD90M)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F59.0.3071.125%20Mobile%20Safari%2F537.36 HTTP/1.1
 Accept: application/json
 ```
 
@@ -50,30 +49,69 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@nextLink":"http://services.odata.org/V4/TripPinServiceRW/People?$skiptoken=8",
-  "value":[
+  "customer_ip": null,
+  "errors": [],
+  "locale": "en_US",
+  "session_id": "7c54yHqPA5FulQJVxbwlUT",
+  "user_agent": "MOBAPICLIENTv1",
+  "current_page": 1,
+  "hotels_data": [
     {
-      "userName":"russellwhyte",
-      "firstName":"Russell",
-      "lastName":"Whyte",
-      "emails":[
-        "Russell@example.com",
-        "Russell@contoso.com"
-      ],
-      "addressInfo":[
+      "address": "Schottenring 24",
+      "airport_code": "VIE",
+      "amenities": {
+        "property_amenities": [
+          "AIRSH",
+          "BAR",
+          "BCNT",
+          "BFST",
+          "CCNT",
+          "CLNG",
+          "FWIFI",
+          "GOLF",
+          "GYM",
+          "INTT",
+          "KIDAC",
+          "LIFT",
+          "LNDR",
+          "MTNG",
+          "NSMK",
+          "PARK",
+          "PETS",
+          "POOL",
+          "RSTR",
+          "RSVC",
+          "SAUNA",
+          "TENN",
+          "WCHR"
+        ],
+        "room_amenities": [
+          "ACND",
+          "MBAR",
+          "SAFE",
+          "TV"
+        ]
+      },
+      "chain_info": [
         {
-          "address":"187 Suffolk Ln.",
-          "city":{
-            "countryRegion":"United States",
-            "name":"Boise",
-            "region":"ID"
-          }
+          "chain_code": "KI",
+          "chain_name": "Kempinski Hotels",
+          "master_chain_code": "GL",
+          "master_chain_name": "Globalhotel Alliance"
         }
-      ],
-      "gender":"Male",
-    },
-    ...
-  ]
+      ]
+      ...
+      "tmc_preference_tier": 2,
+      "tmc_preferred": true,
+      "trip_advisor_rating": 5,
+      "is_on_request_hotel": false,
+      "is_cash_only_hotel": false
+    }
+  ],
+  "hotels_found_total": 466,
+  "hotels_returned": 2,
+  "more_results_available": true,
+  "page_results": 233
 }
 ```
 
@@ -88,9 +126,8 @@ Pull requests serve as the primary mechanism by which contributions are proposed
 
 Be prepared to address feedback on your pull request and iterate if necessary.
 
-[code-of-conduct]: https://opensource.microsoft.com/codeofconduct/
-[new-issue]: https://github.com/Microsoft/api-guidelines/issues/new
-[issue-search]: https://github.com/Microsoft/api-guidelines/issues
+[new-issue]: https://github.com/chmarz/API-guidelines/issues/new
+[issue-search]: https://github.com/chmarz/API-guidelines/issues
 [white-house-api-guidelines]: https://github.com/WhiteHouse/api-standards/blob/master/README.md
 [topic-branch]: http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches
 [gfm]: https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown
