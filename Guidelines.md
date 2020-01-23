@@ -2173,6 +2173,10 @@ Naming policies should aid developers in discovering functionality without havin
 Use of common patterns and standard conventions greatly aids developers in correctly guessing common property names and meanings.
 Services SHOULD use verbose naming patterns and SHOULD NOT use abbreviations other than acronyms that are the dominant mode of expression in the domain being represented by the API, (e.g. Url).
 
+A resource can be a singleton or a collection. For example, “customers” is a collection resource and “customer” is a singleton resource. We can identify the “customers” collection resource as: `/customers`. We can identify a single “customer” resource as: `/customers/{customer_id}`.
+
+A resource may contain sub-collection resources also. For example, sub-collection resource “accounts” of a particular “customer” can be identified as: `/customers/{customer_id}/accounts`. Similarly, a singleton resource “account” inside the sub-collection resource “accounts” can be identified as: `/customers/{customer_id}/accounts/{account_id}`.
+
 ### 17.2. Casing
 - Acronyms SHOULD follow the casing conventions as though they were regular words (e.g. Url).
 - All identifiers including namespaces, entityTypes, entitySets, properties, actions, functions and enumeration values SHOULD use lowerCamelCase.
@@ -2209,10 +2213,11 @@ Services SHOULD NOT use the following names:
 - Services MAY use other common naming properties, e.g. givenName, surname, signInName.
 
 ### 17.8. Collections and counts
+- In general, collection resource names should be plural.
+- Parent resource collection names must be named to reflect the application use case. For example, an endpoint that retrieves a list of hotel property codes would belong in the /hotels collection resource.
 - Services MUST name collections as plural nouns or plural noun phrases using correct English.
 - Services MAY use simplified English for nouns that have plurals not in common verbal usage.
 	- e.g. schemas MAY be used instead of schemata.
-- Services MUST name counts of resources with a noun or noun phrase suffixed with 'Count'.
 
 ### 17.9. Common property names
 Where services have a property, whose data matches the names below, the service MUST use the name from this table.
@@ -2221,6 +2226,7 @@ Service owners adding such terms SHOULD propose additions to this document.
 
 | |
 |------------- |
+ accountId     |
  attendees     |
  body          |  
  createdDateTime |
@@ -2235,6 +2241,7 @@ Service owners adding such terms SHOULD propose additions to this document.
  event         |
  expirationDateTime |
  givenName     |
+ globalCustomerNumber |
  jobTitle      |
  kind          |  
  id            |
@@ -2250,6 +2257,7 @@ Service owners adding such terms SHOULD propose additions to this document.
  photo         |
  preferredLanguage |
  properties    |
+ recordLocator |
  signInName    |
  surname       |
  tags          |
