@@ -12,7 +12,7 @@ Yauheni Sankevich (EPAM)                     | Daniel Toth (EPAM)
 Vera Sotnikava (EPAM)                        | Leah Tucker {Your APIs}
 
 <div style="font-size:150%">
-Document editors: Leah Tucker {Your APIs}, Chet Marshall
+Document editors: Leah Tucker, Chet Marshall
 </div>
 
 
