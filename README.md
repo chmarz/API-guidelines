@@ -1,6 +1,6 @@
 # BCD Travel REST API Guidelines
 The [BCD Travel REST API Guidelines](Guidelines.md) are BCD Travel's internal company-wide REST API design guidelines.
-Teams at Bcd Travel typically reference this document when setting API design policy.
+Teams at BCD Travel typically reference this document when setting API design policy.
 They may additionally create documents specific to their team, adding further guidance or making adjustments as appropriate to their circumstances.
 
 We publish these guidelines here with the aim of fostering dialogue and learning in the API community at large.
